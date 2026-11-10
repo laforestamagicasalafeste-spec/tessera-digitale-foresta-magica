@@ -6,6 +6,106 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>Il tuo passaporto per la creatività | La foresta magica</title>
+
+  <meta name="description"
+        content="Scopri la tua tessera digitale e i bollini dei laboratori creativi organizzati da La foresta magica.">
+
+  <meta property="og:type" content="website">
+
+  <meta property="og:title"
+        content="Il tuo passaporto per la creatività">
+
+  <meta property="og:description"
+        content="La tua tessera digitale per i laboratori creativi organizzati da La foresta magica.">
+
+  <meta property="og:image"
+        content="https://laforestamagicasalafeste-spec.github.io/tessera-digitale-foresta-magica/anteprima-tessera.png">
+
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+  <meta property="og:image:secure_url"
+        content="https://laforestamagicasalafeste-spec.github.io/tessera-digitale-foresta-magica/anteprima-tessera.png">
+
+  <meta property="og:image:type" content="image/png">
+
+  <meta name="twitter:card" content="summary_large_image">
+
+  <style>
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: #f2fff1;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      color: #326b36;
+    }
+
+    .contenitore {
+      max-width: 650px;
+      margin: 40px auto;
+      padding: 20px;
+    }
+
+    img {
+      width: 100%;
+      border-radius: 18px;
+    }
+
+    h1 {
+      font-size: 26px;
+    }
+
+    p {
+      line-height: 1.6;
+    }
+  </style>
+
+  <script>
+    const parametri = new URLSearchParams(window.location.search);
+    const token = parametri.get("token");
+
+    if (token && /^[a-zA-Z0-9_-]+$/.test(token)) {
+      const indirizzoTessera =
+        "https://script.google.com/macros/s/AKfycbyKKIpctVw0S92wFMKiQnfNyMm2pXkLg2ak_nGlOz487fwwEmLix0vowrUWUWnLudBa/exec";
+
+      window.location.replace(
+        indirizzoTessera + "?token=" + encodeURIComponent(token)
+      );
+    }
+  </script>
+</head>
+
+<body>
+  <div class="contenitore">
+
+    <img src="anteprima-tessera.png"
+         alt="La foresta magica - Candy e Prince">
+
+    <h1>Il tuo passaporto per la creatività</h1>
+
+    <p>
+      Benvenuto nella tessera digitale
+      dei laboratori creativi organizzati
+      da La foresta magica!
+    </p>
+
+    <p>
+      Raccogli i tuoi bollini e scopri
+      tutti i laboratori a cui hai partecipato.
+    </p>
+
+  </div>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Il tuo passaporto per la creatività | La foresta magica</title>
   <meta name="description"
         content="Scopri la tua tessera digitale e i bollini dei laboratori creativi di La foresta magica.">
 
