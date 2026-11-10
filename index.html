@@ -48,6 +48,19 @@
       line-height: 1.6;
     }
   </style>
+  <script>
+  const parametri = new URLSearchParams(window.location.search);
+  const token = parametri.get("token");
+
+  if (token && /^[a-zA-Z0-9_-]+$/.test(token)) {
+    const indirizzoTessera =
+      "https://script.google.com/macros/s/AKfycbyKKIpctVw0S92wFMKiQnfNyMm2pXkLg2ak_nGlOz487fwwEmLix0vowrUWUWnLudBa/exec";
+
+    window.location.replace(
+      indirizzoTessera + "?token=" + encodeURIComponent(token)
+    );
+  }
+</script>
 </head>
 
 <body>
